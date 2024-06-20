@@ -1,0 +1,18 @@
+Eloquent ORM
+php artisan make:model Webtoon
+php artisan make:model Episode
+php artisan make:model Page
+php artisan make:model Favorite
+php artisan make:model ReadingHistory
+php artisan make:model Webtoon -m
+php artisan make:model Episode -m
+php artisan make:model Page -m
+php artisan make:model Favorite -m
+php artisan make:model ReadingHistory -m
+php artisan make:livewire Webtoons
+php artisan make:livewire Episodes
+php artisan make:livewire Pages
+php artisan make:livewire Favorites
+php artisan make:livewire ReadingHistories
+php artisan make:livewire Users
+

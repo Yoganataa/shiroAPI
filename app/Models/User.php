@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
@@ -25,8 +26,11 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
-        'password',
+        'username', 
+        'email', 
+        'password', 
+        'role', 
+        'date_of_birth',
     ];
 
     /**
@@ -40,6 +44,16 @@ class User extends Authenticatable
         'two_factor_recovery_codes',
         'two_factor_secret',
     ];
+
+    public function favorites()
+    {
+        return $this->belongsToMany(Webtoon::class, 'favorites', 'user_id', 'webtoon_id');
+    }
+
+    public function readingHistories()
+    {
+        return $this->belongsToMany(Episode::class, 'reading_histories', 'user_id', 'episode_id');
+    }
 
     /**
      * The accessors to append to the model's array form.

@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://api.yoganata.web.id/storage/profile-photos/rimuru.webp" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://api.yoganata.web.id" target="_blank"><img src="https://i.ibb.co.com/NpfWpWj/tensei-shitara-slime-datta-ken-rimuru-render-n-2-by-blackrangers123-ddl7asa.png" width="400" alt="Shiro Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
